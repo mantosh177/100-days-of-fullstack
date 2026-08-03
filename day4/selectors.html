@@ -11,10 +11,12 @@
     <style>
         /* 1. Universal Selectors */
         * {
-            margin: 0;
-            padding: 0;
+            margin: 100;
+            padding: 200;
             box-sizing: border-box;
         }
+
+
         /* 2. Type selectors*/
         p{
             font-size: 16px;
@@ -26,25 +28,51 @@
             margin: 20px;
           
         }
+
+
         /* 3. Class selectors  */
         .highlight {
             background-color: #34db34;
         }
+
+
         /* 4. ID Selectors  */
         #header{
             background-color: #8dde14;
         }
        
+
         /* 5. Attribut Selector */
         input[type="text"]{
             border: 2px solid #8dde14;
         }
+        input[type="password"]{
+            border: 3px solid pink;
+        }
+        input[type="image"]{
+            border: 5px solid blue;
+            color: #34db34;
+        }
+         
+
         /* 6. Descendant Selectors */
+        div p{
+            color: rgb(90, 8, 185);
+        }
 
         /* 7. Child Selector */
+        #first p{
+            color: rgb(14, 8, 1);
+        }
         /* 8. Adjacent Sibling Selector */
+        
+        
 
-
+        /* 9. group selecotr */
+        p,pre,a,input{
+            color: rgb(209, 119, 17);
+        }
+        
 
 
     </style>
@@ -74,6 +102,11 @@
         eius tempore, maxime quas?
 
     </p>
+    <div
+        id = "first">
+        <p>paragrph for the child selector </p>
+    </div>
+    
     <h1>Main heading </h1>
     <a href="" class="href">heey this is mantosh </a>
     <pre> hey this is mantosh
@@ -97,6 +130,13 @@ sunt nam eum ab, ut, asperiores alias ea
   </pre>
   <a href="https://www.google.com" class="href">Search anything</a>
  
+  <input type="text">
+  <input type="password">
+ <input type="image" alt="image here">
+
+ <div><p>
+    hey this line is written for the checking the descendant Selector
+ </p></div>
 </body>
 
 </html>
