@@ -1,12 +1,7 @@
-.env
-node_modules
-.env
-package.json
-tailwind.config.json
 # Dependencies
 node_modules/
 
-# Build output
+# Build files
 dist/
 build/
 
