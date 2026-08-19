@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@theme{
+  --breakpoint-*: initial;
+  --breakpoint-3xl: 120rem;
+}
 :root {
   --text: #6b6375;
   --text-h: #08060d;

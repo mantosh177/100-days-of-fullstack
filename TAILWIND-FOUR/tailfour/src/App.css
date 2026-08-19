@@ -1,3 +1,13 @@
+.text-3xl{
+  background-color:rgb(214, 187, 32) ;
+  color: rgb(0, 0, 0);
+  font-size: 7rem;
+  margin-top: 150px;
+  text-align: center;
+}
+
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
