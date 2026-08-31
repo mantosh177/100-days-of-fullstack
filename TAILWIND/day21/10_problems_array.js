@@ -16,5 +16,25 @@ const favoritecity = cities[2];
 
         let teaTypes = ["herbal tea", "white tea", "masala chai"];
         teaTypes[1] = "jasmine tea"
-        console.log(teaTypes)
+        // console.log(teaTypes)
 
+//  4. Given an array of numbers, find the second largest unique number.
+    // let numbers = [10, 5, 20, 8, 20, 15];
+
+    let numbers = [10, 5, 20, 8, 20, 15];
+
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for (let i = 0; i < numbers.length; i++) {
+
+    if (numbers[i] > largest) {
+        secondLargest = largest;
+        largest = numbers[i];
+    } 
+    else if (numbers[i] > secondLargest && numbers[i] !== largest) {
+        secondLargest = numbers[i];
+    }
+}
+
+console.log(secondLargest);
