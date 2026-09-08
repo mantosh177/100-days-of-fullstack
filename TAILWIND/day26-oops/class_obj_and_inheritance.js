@@ -1,9 +1,11 @@
+
+
 let car = {
-    maeke : "toyota",
+    make : "toyota",
     model: "camry",
     year:2020,
     start : function(){
-        return`${this.maeke} car got started in ${this.year}`
+        return`${this.make} car got started in ${this.year}`
     }
 }
 // console.log(car.start())
@@ -83,9 +85,9 @@ let account = new BankAccount()
 console.log(account.getBalance());
 
 
-/* ===============
- ABSTRACTION
- ===========*/
+                                                /* ===============
+                                                ABSTRACTION
+                                                 ===========*/
 
 class CoffeMachine {
     start(){
@@ -116,9 +118,9 @@ let myMachine = new CoffeMachine()
 
 
 
- /* ================
-    Polymorphism 
-    =============*/
+                                                    /* ================
+                                                       Polymorphism 
+                                                       =============*/
 
 class Bird {
     fly(){
@@ -137,7 +139,7 @@ let bird = new Bird()
 let penguin = new Penguin()
 
 // console.log(bird.fly())
-// console.log(penguin.fly()
+// console.log(penguin.fly())
 // )
 
 
