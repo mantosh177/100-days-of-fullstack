@@ -79,3 +79,32 @@ document
         alert("you selected : " + event.target.textContent)
     }
 })
+
+
+// example - 8 
+
+document
+.getElementById("feedbackForm")
+.addEventListener("submit", function(event){
+    event.preventDefault();
+    let feedback = document.getElementById("feedbackInput").value;
+    console.log(feedback);
+    document.getElementById("feedbackDisplay").textContent
+     = `Feedback is : ${feedback}`
+})
+
+
+// example - 9
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById("domStatus").textContent= "DOM fully Loaded "
+})
+
+// example = 10
+
+document.getElementById("toggleHighLight").addEventListener(
+    "click", function(){
+        let desctiptionText = document.getElementById("descriptionText");
+        desctiptionText.classList.toggle("highlight")
+    }
+)
